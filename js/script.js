@@ -1,6 +1,22 @@
 let display = document.getElementById("display");
 
-let resultado = 0;
+
+// Limpar operações da calculadora
+let buttonCE = document.getElementById("buttonCE").addEventListener('click', () => {
+  display.innerHTML = "";
+});
+
+let buttonC = document.getElementById("buttonC").addEventListener('click', () => {
+  display.innerHTML = "";
+});
+
+let buttonDel = document.getElementById("buttonDel").addEventListener('click', () => {
+  display.innerHTML = "";
+});
+
+let buttonVirgula = document.getElementById("button-virgula").addEventListener('click', () => {
+  display.innerHTML += ".";
+});
 
 let buttonValor1 = document.getElementById("button-valor-1").addEventListener('click', () => {
   display.innerHTML += 1;
@@ -37,19 +53,18 @@ let buttonSinalIgualdade = document.getElementById("button-sinal-igualdade");
 
 
 let buttonSomar = document.getElementById("button-somar").addEventListener('click', () => {
-  // valorTemporario1.push(display.innerHTML);
   display.innerHTML += " + ";
   
   // Caso botão seja acionado
   buttonSinalIgualdade.addEventListener('click', () => {
-
     if(display){
       display.innerHTML = eval(display.innerHTML);
     }
   });
+
+
 });
 let buttonSubtrair = document.getElementById("button-subtrair").addEventListener('click', () => {
-  // valorTemporario1.push(display.innerHTML);
   display.innerHTML += " - ";
   
   // Caso botão seja acionado
@@ -62,7 +77,6 @@ let buttonSubtrair = document.getElementById("button-subtrair").addEventListener
 
 });
 let buttonDividir = document.getElementById("button-dividir").addEventListener('click', () => {
-  // valorTemporario1.push(display.innerHTML);
   display.innerHTML += " / ";
   
   // Caso botão seja acionado
@@ -75,7 +89,6 @@ let buttonDividir = document.getElementById("button-dividir").addEventListener('
 
 });
 let buttonMultiplicar = document.getElementById("button-multiplicar").addEventListener('click', () => {
-  // valorTemporario1.push(display.innerHTML);
   display.innerHTML += " * ";
   
   // Caso botão seja acionado
@@ -89,7 +102,4 @@ let buttonMultiplicar = document.getElementById("button-multiplicar").addEventLi
 });
 
 
-// Limpar operações da calculadora
-let buttonCE = document.getElementById("buttonCE").addEventListener('click', () => {
-  display.innerHTML = "";
-});
+
