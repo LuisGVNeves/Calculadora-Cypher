@@ -1,7 +1,7 @@
 # Calculadora-Web
 
 ### Sobre o projeto
-- Calculadora feito com HTML5 semântico, CSS3 utilizando *flexbox e Grid* e *Javascript* 
+- Calculadora minimalista feito com HTML5 semântico, CSS3 utilizando *flexbox e Grid* e *Javascript* no DOM
 
 ### Acessar o projeto
 - Acesse o site pelo github pages: https://luisgvneves.github.io/Calculadora-Web/
