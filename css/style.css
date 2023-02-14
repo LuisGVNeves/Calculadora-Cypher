@@ -6,21 +6,21 @@
   font-family: 'Montserrat', sans-serif;
 }
 body {
-  background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
+  background: url(../img/background.jpg) no-repeat bottom center scroll; 
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
+  height: 150vh;
 }
 
-header h1{
+header{
   color: #fff;
   border: 1px solid #000;
   text-align: center;
   background-color: #ecd957;
+  width: 100%;
 }
 
-.container-2{
+.container-area{
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -70,7 +70,7 @@ header h1{
   border: 1px solid #000000;
 }
 
-main .container{
+main .container-calculadora{
   display: grid;
 
   /* 4 botoes com tamanho 70px na coluna */
@@ -87,7 +87,7 @@ main .container{
 
 
 
-main .container button {
+main .container-calculadora button {
   margin-left: 35px;
   color: #fff;
   border: 1px solid #ffea2d;
@@ -98,7 +98,7 @@ main .container button {
   background-color: rgb(29, 29, 29);
   font-size: 15px;
 }
-main .container button:hover{
+main .container-calculadora button:hover{
   background-color: aliceblue;
   color: black;
   border: 1px solid #11110c;
