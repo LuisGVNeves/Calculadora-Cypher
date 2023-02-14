@@ -47,6 +47,12 @@ header{
   left: 420px;
   top: -70px;
 }
+#olhosBill{
+  position: absolute;
+  width: 100px;
+  left: 445px;
+  top: 65px;
+}
 
 .triangle {
   width: 0;
@@ -73,11 +79,11 @@ header{
 main .container-calculadora{
   display: grid;
 
-  /* 4 botoes com tamanho 70px na coluna */
-  grid-template-columns: repeat(4,60px);
+  /* 4 botoes com tamanho 55px na coluna */
+  grid-template-columns: repeat(4,55px);
 
-  /*4 botoes com tamanho 70px na linha */
-  grid-template-rows: repeat(4,70px);
+  /*4 botoes com tamanho 60px na linha */
+  grid-template-rows: repeat(4,60px);
 
   width: 300px;
   margin-top: -335px;
@@ -88,7 +94,8 @@ main .container-calculadora{
 
 
 main .container-calculadora button {
-  margin-left: 35px;
+  margin-left: 40px;
+  margin-top: 20px;
   color: #fff;
   border: 1px solid #ffea2d;
   width: 40px;
