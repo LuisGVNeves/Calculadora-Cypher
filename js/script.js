@@ -1,52 +1,132 @@
+window.addEventListener('keypress', (e) => {
+  // Se enter for pressionado, vai resolver conta que tiver no display
+  if(e.key == 'Enter'){
+    display.innerHTML = eval(display.innerHTML);
+  }
+  if(e.key == 0){
+    display.innerHTML += 0;
+  }
+  if(e.key == 1){
+    display.innerHTML += 1;
+  }
+  if(e.key == 2){
+    display.innerHTML += 2;
+  }
+  if(e.key == 3){
+    display.innerHTML += 3;
+  }
+  if(e.key == 4){
+    display.innerHTML += 4;
+  }
+  if(e.key == 5){
+    display.innerHTML += 5;
+  }
+  if(e.key == 6){
+    display.innerHTML += 6;
+  }
+  if(e.key == 7){
+    display.innerHTML += 7;
+  }
+  if(e.key == 8){
+    display.innerHTML += 8;
+  }
+  if(e.key == 9){
+    display.innerHTML += 9;
+  }
+  if(e.key == ','){
+    display.innerHTML += '.';
+  }
+  if(e.key == '+' || e.key == '-' || e.key == '*' || e.key == '/'){
+
+    if(e.key == '+')
+      display.innerHTML += " + ";
+
+    if(e.key == '-')
+    display.innerHTML += " - ";
+
+    if(e.key == '*')
+    display.innerHTML += " * ";
+
+    if(e.key == '/')
+    display.innerHTML += " / ";
+
+    // Caso botão seja acionado
+    buttonSinalIgualdade.addEventListener('click', () => {
+      if(display){
+        display.innerHTML = eval(display.innerHTML);
+      }
+    });
+  }
+})
+
+
 let display = document.getElementById("display");
 
 
 // Limpar operações da calculadora
-let buttonCE = document.getElementById("buttonCE").addEventListener('click', () => {
+document.getElementById("buttonCE").addEventListener('click', () => {
   display.innerHTML = "";
 });
 
-let buttonC = document.getElementById("buttonC").addEventListener('click', () => {
+document.getElementById("buttonC").addEventListener('click', () => {
   display.innerHTML = "";
 });
 
-let buttonDel = document.getElementById("buttonDel").addEventListener('click', () => {
+document.getElementById("buttonDel").addEventListener('click', () => {
   display.innerHTML = "";
 });
 
-let buttonVirgula = document.getElementById("button-virgula").addEventListener('click', () => {
+document.getElementById("button-virgula").addEventListener('click', () => {
   display.innerHTML += ".";
 });
 
-let buttonValor0 = document.getElementById("button-valor-0").addEventListener('click', () => {
+document.getElementById("button-valor-0").addEventListener('click', () => {
   display.innerHTML += 0;
 });
 
-let buttonValor1 = document.getElementById("button-valor-1").addEventListener('click', () => {
+
+document.getElementById("button-valor-1").addEventListener('click', () => {
   display.innerHTML += 1;
 });
-let buttonValor2 = document.getElementById("button-valor-2").addEventListener('click', () => {
+
+
+document.getElementById("button-valor-2").addEventListener('click', () => {
   display.innerHTML += 2;
 });
-let buttonValor3 = document.getElementById("button-valor-3").addEventListener('click', () => {
+
+
+document.getElementById("button-valor-3").addEventListener('click', () => {
   display.innerHTML += 3;
 });
-let buttonValor4 = document.getElementById("button-valor-4").addEventListener('click', () => {
+
+
+document.getElementById("button-valor-4").addEventListener('click', () => {
   display.innerHTML += 4;
 });
-let buttonValor5 = document.getElementById("button-valor-5").addEventListener('click', () => {
+
+
+document.getElementById("button-valor-5").addEventListener('click', () => {
   display.innerHTML += 5;
 });
-let buttonValor6 = document.getElementById("button-valor-6").addEventListener('click', () => {
+
+
+document.getElementById("button-valor-6").addEventListener('click', () => {
   display.innerHTML += 6;
 });
-let buttonValor7 = document.getElementById("button-valor-7").addEventListener('click', () => {
+
+
+
+document.getElementById("button-valor-7").addEventListener('click', () => {
   display.innerHTML += 7;
 });
-let buttonValor8 = document.getElementById("button-valor-8").addEventListener('click', () => {
+
+
+document.getElementById("button-valor-8").addEventListener('click', () => {
   display.innerHTML += 8;
 });
-let buttonValor9 = document.getElementById("button-valor-9").addEventListener('click', () => {
+
+
+document.getElementById("button-valor-9").addEventListener('click', () => {
   display.innerHTML += 9;
 });
 
@@ -92,6 +172,7 @@ let buttonDividir = document.getElementById("button-dividir").addEventListener('
   });
 
 });
+
 let buttonMultiplicar = document.getElementById("button-multiplicar").addEventListener('click', () => {
   display.innerHTML += " * ";
   
