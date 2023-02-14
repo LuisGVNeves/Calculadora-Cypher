@@ -18,6 +18,10 @@ let buttonVirgula = document.getElementById("button-virgula").addEventListener('
   display.innerHTML += ".";
 });
 
+let buttonValor0 = document.getElementById("button-valor-0").addEventListener('click', () => {
+  display.innerHTML += 0;
+});
+
 let buttonValor1 = document.getElementById("button-valor-1").addEventListener('click', () => {
   display.innerHTML += 1;
 });

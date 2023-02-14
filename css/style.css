@@ -1,66 +1,106 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: black;
   box-sizing: border-box;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 
 header h1{
   color: #fff;
+  border: 1px solid #000;
   text-align: center;
+  background-color: #ecd957;
 }
 
-
-main .container{
-  border-radius: 10%;
-  background-color: rgb(3, 3, 3);
-
+.container-2{
   position: relative;
-  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 10px;
+  padding-left: 40px;
+  text-align: center;
+  margin-top: 5%;
+  width: 950px;
+  height: 500px;
+}
+#bracoBill{
+  position: absolute;
+  left: 170px;
+  top: 210px;
+}
+#pernaBill{
+  position: absolute;
+  left: 460px;
+  top: 470px;
+}
+#chapeuBill{
+  position: absolute;
+  width: 100px;
+  left: 420px;
+  top: -70px;
+}
 
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 450px solid transparent;
+  border-right: 450px solid transparent;
+  border-bottom: 440px solid #ecd957;
+  margin-top: 20px;
+}
+
+.triangle #display {
+  position: absolute;
+  left: 40px;
+  margin-top: 140px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  width: 240px;
+  border: 1px solid #000000;
+}
+
+main .container{
   display: grid;
+
   /* 4 botoes com tamanho 70px na coluna */
   grid-template-columns: repeat(4,60px);
 
-  /* 4 botoes com tamanho 70px na linha */
+  /*4 botoes com tamanho 70px na linha */
   grid-template-rows: repeat(4,70px);
 
-  width: 320px;
-  height: 450px;
-  border: 1px solid #fff;
-
+  width: 300px;
+  margin-top: -335px;
+  margin-left: auto;
+  margin-right: auto;
 }
-main #display {
-  background-color: rgb(219, 219, 219);
-  color: black;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-left: 35px;
 
-  position: absolute;
-  top: 0;
-  line-height: 40px;
 
-  height: 40px;
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid #fff;
-}
+
 main .container button {
-  margin-top: 80px;
-  margin-left: 47px;
+  margin-left: 35px;
   color: #fff;
-  border: 1px solid #fff;
-  width: 50px;
-  height: 50px;
+  border: 1px solid #ffea2d;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   border-radius: 50%;
+  background-color: rgb(29, 29, 29);
+  font-size: 15px;
 }
 main .container button:hover{
   background-color: aliceblue;
   color: black;
+  border: 1px solid #11110c;
 }
+
